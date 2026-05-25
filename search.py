@@ -1,35 +1,3 @@
-"""
-search.py
----------
-Semantic search engine for the Document AI Pipeline.
-
-HOW IT WORKS:
-  1. Each document's text is encoded into a dense vector using
-     SentenceTransformers (all-MiniLM-L6-v2 — small, fast, offline-capable).
-  2. Vectors are stored in a FAISS index for fast cosine-similarity search.
-  3. At query time the query string is encoded with the same model and the
-     top-k nearest document vectors are returned.
-
-WHY THESE CHOICES:
-  - sentence-transformers/all-MiniLM-L6-v2  : ~80 MB, runs fully on CPU,
-    no internet needed after the first download, strong semantic quality.
-  - faiss-cpu                                : Meta's library for fast
-    nearest-neighbour search; no GPU required.
-  - IndexFlatIP (inner product on L2-normed  : equivalent to cosine similarity;
-    vectors)                                   simple and exact (no approximation).
-
-OFFLINE USE:
-  On first run the model is downloaded to ~/.cache/huggingface/hub.
-  After that it works fully offline. To pre-bundle the model, run:
-      python -c "from sentence_transformers import SentenceTransformer; \
-                 SentenceTransformer('all-MiniLM-L6-v2')"
-  before zipping the project.
-
-DEPENDENCIES (add to requirements.txt):
-    sentence-transformers>=2.2.2
-    faiss-cpu>=1.7.4
-"""
-
 from __future__ import annotations
 
 import re

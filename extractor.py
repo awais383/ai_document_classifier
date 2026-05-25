@@ -1,22 +1,3 @@
-"""
-extractor.py
-------------
-Field extractor for Invoice, Resume, and Utility Bill documents.
-
-FIXES APPLIED:
-  1. extract_amount_due   — Added $ £ € to currency patterns (was PKR/Rs only)
-                            Added explicit "PAYABLE WITHIN DUE DATE" pattern
-  2. extract_usage_kwh    — Reordered patterns: specific first, generic last
-                            Generic '[digits]+kwh' pattern was matching meter readings
-                            (e.g. 14320 kWh) before reaching "units consumed"
-  3. extract_invoice_number — Changed [A-Z0-9] to [A-Za-z0-9] to catch
-                            mixed-case IDs like inv-001, INV-2024-001
-  4. extract_experience_years — Fallback now calculates actual year delta
-                            instead of returning len(job_ranges) which was just
-                            a count of jobs. Also added unicode en/em dash
-                            support (U+2013, U+2014) which PDFs commonly use.
-"""
-
 import re
 import datetime
 from typing import Optional

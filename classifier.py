@@ -1,25 +1,7 @@
-"""
-classifier.py
--------------
-Classifies documents using keyword-based scoring.
-
-WHY THIS APPROACH:
-- No training data required
-- Fast and interpretable
-- Keywords are domain-specific and reliable for these document types
-- TF-IDF style scoring gives weighted confidence per category
-
-FIXES:
-- Raised minimum score threshold from 3 → 8 to prevent research papers /
-  generic docs from being misclassified as Resume (they score low but > 3)
-- "Other" fallback now correctly catches ambiguous low-confidence results
-"""
 
 import re
 from typing import Literal
 
-# Define keyword sets for each category
-# More specific / longer keywords = higher weight score
 KEYWORDS = {
     "Invoice": [
         "invoice", "inv-", "bill to", "ship to", "subtotal", "total amount",

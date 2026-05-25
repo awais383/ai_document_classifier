@@ -1,8 +1,3 @@
-"""
-main.py — Final fixed version
-Handles: scanned/image PDFs, research papers, Pakistani utility bills
-"""
-
 import os
 import json
 import argparse
