@@ -1,0 +1,75 @@
+{
+  "Ammar_updated_CV.pdf": {
+    "class": "Resume",
+    "name": "AMMAR HUSSNAIN",
+    "email": "ammarishaq496@gmail.com",
+    "phone": "0506161837",
+    "experience_years": 6
+  },
+  "AwaisHanifAIML.pdf": {
+    "class": "Resume",
+    "name": "Muhammad Awais",
+    "email": "awaishanif0007@gmail.com",
+    "phone": "+92 325 0793007",
+    "experience_years": null
+  },
+  "FawadAIML.pdf": {
+    "class": "Resume",
+    "name": "Fawad Qureshi",
+    "email": "fawadqureshi136@gmail.com",
+    "phone": "+923130583693",
+    "experience_years": null
+  },
+  "SHIFA_ALI_CV.pdf": {
+    "class": "Resume",
+    "name": "SHIFA ALI",
+    "email": "shifaali862@gmail.com",
+    "phone": "+923440577708",
+    "experience_years": 4
+  },
+  "attention_is_all_explained.pdf": {
+    "class": "Other"
+  },
+  "electricity_bill.pdf": {
+    "class": "Utility Bill",
+    "account_number": "EL-2024-00874",
+    "date": "30 April 2024",
+    "usage_kwh": 227.0,
+    "amount_due": 0.12
+  },
+  "gas_bill.pdf": {
+    "class": "Utility Bill",
+    "account_number": "GAS-77541-B",
+    "date": "25 April 2024",
+    "usage_kwh": 284.0,
+    "amount_due": 0.09
+  },
+  "invoice-invoice (1).pdf": {
+    "class": "Invoice",
+    "invoice_number": null,
+    "date": "May 25, 2026",
+    "company": "Awais Hanif",
+    "total_amount": 609.9
+  },
+  "invoice-invoice.pdf": {
+    "class": "Invoice",
+    "invoice_number": null,
+    "date": "May 25, 2026",
+    "company": "Awais Hanif",
+    "total_amount": 609.9
+  },
+  "invoice-invoice_3.pdf": {
+    "class": "Invoice",
+    "invoice_number": null,
+    "date": "May 3, 2026",
+    "company": "Awais Hanif",
+    "total_amount": 99955.0
+  },
+  "water_bill.pdf": {
+    "class": "Utility Bill",
+    "account_number": "WS-0039-2241",
+    "date": "01 Apr 2024",
+    "usage_kwh": 308.0,
+    "amount_due": 0.05
+  }
+}
